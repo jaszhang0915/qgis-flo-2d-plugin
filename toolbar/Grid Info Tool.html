@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Grid Info Tool &#8212; FLO-2D-Tutorials  documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/static/style.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Hazus Tool" href="Hazus Tool.html" />
+    <link rel="prev" title="FLO-2D Plugin Settings" href="Flo-2D Settings.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/Flo2D_logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">FLO-2D-Tutorials  documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Installation Instruction:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation-instructions/Installation.html">
+   Installation Instructions
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Plugin Features:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plugin-features/Data Storage.html">
+   Data Storage
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plugin-features/Plugin Features.html">
+   Plugin Features
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plugin-features/View Options.html">
+   View Options
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Post Development Grid Modification:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../post-development-grid-modification/Post Development Grid Modification.html">
+   Post Development Grid Modification
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Toolbar QGIS and FLO-2D:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Channel Profile.html">
+   Channel Profile Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Convert User Layers to Schematic Layers.html">
+   Convert User Layers to Schematic Layers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Debug.html">
+   Debug Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Export Project.html">
+   Export Project
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Flo-2D Info Tool.html">
+   FLO-2D Info Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Flo-2D Settings.html">
+   FLO-2D Plugin Settings
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Grid Info Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Hazus Tool.html">
+   Hazus Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Import Data Files.html">
+   Import Data Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Import Geo Package.html">
+   Import a Geo Package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Import RAS Channel.html">
+   Import HEC-RAS Channel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Imported Selected Component Files.html">
+   Import Selected Component Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Levee Tool.html">
+   Levee Elevation Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="QGIS General Tools.html">
+   QGIS Tools
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Run Flo-2D.html">
+   Run FLO-2D
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Schema 2 User.html">
+   Schematic Layers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Setup Control Variables.html">
+   Setup Control Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Walls.html">
+   Walls
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Widgets:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/boundary-condition-editor/Boundary Condition Editor.html">
+   Boundary Condition Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/floodplain-cross-section-editor/Floodplain Cross Section Editor.html">
+   Floodplain Cross Section Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Area and Width Reduction.html">
+   Area and Width Reduction Factor – Buildings
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Assign Results from Points Layers.html">
+   Assign Results from Points Layer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Create a Grid.html">
+   Create a Grid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Elevation Correction from Polygons.html">
+   Elevation Correction from Polygons, Polylines and Points
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Gutters.html">
+   Gutters
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/No Exchange Channel Cells.html">
+   No Exchange Channel Cells
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Sample Elevation Data GDL Grid Method.html">
+   Sample Elevation Data GDAL Grid Method
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Sample Elevation from Points.html">
+   Sample Elevation Data from Points and LiDAR
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Sample Elevation from Raster.html">
+   Sample Elevation Data from Raster
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Sample Roughness Data.html">
+   Sample Roughness Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Spatial Limiting Froude.html">
+   Spatial Limiting Froude Number
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Spatial Shallow.html">
+   Spatial Shallow n
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Spatially Variable.html">
+   Spatially Variable TOL Parameter – Low Impact Development (LID)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/hydraulic-structure-editor/Hydraulic Structure Editor.html">
+   Hydraulic Structure Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/infiltration-editor/Infiltration Editor.html">
+   Infiltration Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/initial-condition-editor/Initial Condition Editor.html">
+   Initial Condition Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/levees-breach-editor/Levees Breach Editor.html">
+   Levees Breach Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/multiple-channels-editor/Multiple Channel Editor.html">
+   Multiple Channels Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/profile-tool/Profile Tool.html">
+   Profile Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/rain-editor/Rain Editor.html">
+   Rain Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/schematized-channel-editor/Schematized Channel Editor.html">
+   Schematized Channel Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/storm-drainer-editor/Storm Drain.html">
+   Storm Drain Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/street-editor/Street Editor.html">
+   Street Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/user-cross-sections-editor/User Cross Sections Editor.html">
+   User Cross Sections Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../References.html">
+   References
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/toolbar/Grid Info Tool.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="grid-info-tool">
+<h1>Grid Info Tool<a class="headerlink" href="#grid-info-tool" title="Permalink to this headline">¶</a></h1>
+<p>This tool loads the FLO-2D Grid Info panel.</p>
+<img alt="../_images/gridinfo.png" src="../_images/gridinfo.png" />
+<ol class="arabic simple">
+<li><p>Click the icon
+and then click any grid element.</p></li>
+<li><p>Or Enter a grid
+element number an click the Eye.</p></li>
+</ol>
+<img alt="toolbar/../img/Grid-Info-tool/gridinfotool2.png" src="toolbar/../img/Grid-Info-tool/gridinfotool2.png" />
+</div>
+
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="Flo-2D Settings.html" title="previous page">FLO-2D Plugin Settings</a>
+    <a class='right-next' id="next-link" href="Hazus Tool.html" title="next page">Hazus Tool</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Karen O'Brien<br/>
+        
+            &copy; Copyright 2021, Karen O&#39;Brien.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

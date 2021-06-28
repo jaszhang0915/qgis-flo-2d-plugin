@@ -1,0 +1,692 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hazus Tool &#8212; FLO-2D-Tutorials  documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/static/style.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Import Data Files" href="Import Data Files.html" />
+    <link rel="prev" title="Grid Info Tool" href="Grid Info Tool.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/Flo2D_logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">FLO-2D-Tutorials  documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Installation Instruction:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation-instructions/Installation.html">
+   Installation Instructions
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Plugin Features:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plugin-features/Data Storage.html">
+   Data Storage
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plugin-features/Plugin Features.html">
+   Plugin Features
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plugin-features/View Options.html">
+   View Options
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Post Development Grid Modification:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../post-development-grid-modification/Post Development Grid Modification.html">
+   Post Development Grid Modification
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Toolbar QGIS and FLO-2D:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Channel Profile.html">
+   Channel Profile Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Convert User Layers to Schematic Layers.html">
+   Convert User Layers to Schematic Layers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Debug.html">
+   Debug Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Export Project.html">
+   Export Project
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Flo-2D Info Tool.html">
+   FLO-2D Info Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Flo-2D Settings.html">
+   FLO-2D Plugin Settings
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Grid Info Tool.html">
+   Grid Info Tool
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Hazus Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Import Data Files.html">
+   Import Data Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Import Geo Package.html">
+   Import a Geo Package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Import RAS Channel.html">
+   Import HEC-RAS Channel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Imported Selected Component Files.html">
+   Import Selected Component Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Levee Tool.html">
+   Levee Elevation Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="QGIS General Tools.html">
+   QGIS Tools
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Run Flo-2D.html">
+   Run FLO-2D
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Schema 2 User.html">
+   Schematic Layers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Setup Control Variables.html">
+   Setup Control Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Walls.html">
+   Walls
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Widgets:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/boundary-condition-editor/Boundary Condition Editor.html">
+   Boundary Condition Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/floodplain-cross-section-editor/Floodplain Cross Section Editor.html">
+   Floodplain Cross Section Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Area and Width Reduction.html">
+   Area and Width Reduction Factor – Buildings
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Assign Results from Points Layers.html">
+   Assign Results from Points Layer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Create a Grid.html">
+   Create a Grid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Elevation Correction from Polygons.html">
+   Elevation Correction from Polygons, Polylines and Points
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Gutters.html">
+   Gutters
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/No Exchange Channel Cells.html">
+   No Exchange Channel Cells
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Sample Elevation Data GDL Grid Method.html">
+   Sample Elevation Data GDAL Grid Method
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Sample Elevation from Points.html">
+   Sample Elevation Data from Points and LiDAR
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Sample Elevation from Raster.html">
+   Sample Elevation Data from Raster
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Sample Roughness Data.html">
+   Sample Roughness Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Spatial Limiting Froude.html">
+   Spatial Limiting Froude Number
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Spatial Shallow.html">
+   Spatial Shallow n
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Spatially Variable.html">
+   Spatially Variable TOL Parameter – Low Impact Development (LID)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/hydraulic-structure-editor/Hydraulic Structure Editor.html">
+   Hydraulic Structure Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/infiltration-editor/Infiltration Editor.html">
+   Infiltration Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/initial-condition-editor/Initial Condition Editor.html">
+   Initial Condition Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/levees-breach-editor/Levees Breach Editor.html">
+   Levees Breach Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/multiple-channels-editor/Multiple Channel Editor.html">
+   Multiple Channels Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/profile-tool/Profile Tool.html">
+   Profile Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/rain-editor/Rain Editor.html">
+   Rain Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/schematized-channel-editor/Schematized Channel Editor.html">
+   Schematized Channel Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/storm-drainer-editor/Storm Drain.html">
+   Storm Drain Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/street-editor/Street Editor.html">
+   Street Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/user-cross-sections-editor/User Cross Sections Editor.html">
+   User Cross Sections Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../References.html">
+   References
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/toolbar/Hazus Tool.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-layer">
+   Building Layer
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#import-depth-and-water-surface-layers">
+   Import Depth and Water Surface Layers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assign-water-elevation-and-depth-to-the-grid-layer">
+   Assign Water Elevation and Depth to the Grid Layer
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intersect-building-layer-to-grid">
+   Intersect Building Layer to Grid
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#review-intersection-layer">
+   Review Intersection Layer
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homogenize-the-intersection-layer">
+   Homogenize the Intersection Layer
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#join-building-statistics-table-to-building-polygons">
+   Join Building Statistics Table to Building Polygons
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rasterize-the-buildings">
+   Rasterize the Buildings
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="hazus-tool">
+<h1>Hazus Tool<a class="headerlink" href="#hazus-tool" title="Permalink to this headline">¶</a></h1>
+<p>The Hazus tool is used to generate water surface elevation or flow depth
+rasters for the FEMA Hazus program.</p>
+<div class="section" id="building-layer">
+<h2>Building Layer<a class="headerlink" href="#building-layer" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Add building
+layer from a shapefile.</p></li>
+<li><p>Click the <em>Add a Vector Layer</em> button.
+Navigate to the building shapefile and add it to the map.
+If the layer does not have a CRS assigned, a prompt will allow it to be assigned.</p></li>
+</ol>
+<img alt="../_images/hazustool1.png" src="../_images/hazustool1.png" />
+</div>
+<div class="section" id="import-depth-and-water-surface-layers">
+<h2>Import Depth and Water Surface Layers<a class="headerlink" href="#import-depth-and-water-surface-layers" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" start="3">
+<li><p>Add a depth layer and a water surface layer.
+Click <em>Layer</em>&gt;<em>Add Layer</em>&gt;<em>Add Delimited Text Layer</em>
+to import the files DEPTH.OUT and MAXWSELEV.OUT.</p></li>
+</ol>
+<img alt="../_images/hazustool2.png" src="../_images/hazustool2.png" />
+<ol class="arabic simple" start="4">
+<li><p>Right click the layer
+and assign the Coordinate Reference System.</p></li>
+</ol>
+<img alt="../_images/hazustool5.png" src="../_images/hazustool5.png" />
+<ol class="arabic simple" start="5">
+<li><p>Repeat this process
+for the DEPFP.OUT file.</p></li>
+</ol>
+</div>
+<div class="section" id="assign-water-elevation-and-depth-to-the-grid-layer">
+<h2>Assign Water Elevation and Depth to the Grid Layer<a class="headerlink" href="#assign-water-elevation-and-depth-to-the-grid-layer" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" start="6">
+<li><p>On the Grid Tools widget select
+the Assign water elevations/flow depths to grid from points layer icon.</p></li>
+</ol>
+<img alt="../_images/hazustool6.png" src="../_images/hazustool6.png" />
+<ol class="arabic simple" start="7">
+<li><p>Edit the dialog box as
+shown below and click the Assign to selected grid field button.</p></li>
+</ol>
+<img alt="../_images/hazustool7.png" src="../_images/hazustool7.png" />
+<ol class="arabic simple" start="8">
+<li><p>Click OK to
+close the dialog box.</p></li>
+</ol>
+<img alt="../_images/hazustool8.png" src="../_images/hazustool8.png" />
+<ol class="arabic simple" start="9">
+<li><p>Repeat the process
+for the Depth layer.</p></li>
+<li><p>On the <em>Grid Tools</em>
+widget select the <em>Assign water elevations/flow depths to grid from points layer</em> button.</p></li>
+</ol>
+<img alt="../_images/hazustool6.png" src="../_images/hazustool6.png" />
+<ol class="arabic simple" start="11">
+<li><p>Edit the dialog box as
+shown below and click the <em>Assign to selected grid field</em> button.</p></li>
+</ol>
+<img alt="../_images/hazustool9.png" src="../_images/hazustool9.png" />
+<ol class="arabic simple" start="12">
+<li><p>Click <em>OK</em> to
+close the dialog box.</p></li>
+</ol>
+<img alt="../_images/hazustool8.png" src="../_images/hazustool8.png" />
+</div>
+<div class="section" id="intersect-building-layer-to-grid">
+<h2>Intersect Building Layer to Grid<a class="headerlink" href="#intersect-building-layer-to-grid" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" start="13">
+<li><p>Use the <em>QGIS Vector</em>
+Menu to set up the intersection. Click <em>Vectors</em>&gt;<em>GeoProcessing Tools</em>&gt;<em>Intersection</em>.</p></li>
+</ol>
+<img alt="../_images/hazustool10.png" src="../_images/hazustool10.png" />
+<ol class="arabic simple" start="14">
+<li><p>Set up the intersection dialog
+box as shown below. Click <em>Run</em> to make the intersection. This process adds the Intersection layer to the map automatically.</p></li>
+</ol>
+<img alt="../_images/hazustool11.png" src="../_images/hazustool11.png" />
+</div>
+<div class="section" id="review-intersection-layer">
+<h2>Review Intersection Layer<a class="headerlink" href="#review-intersection-layer" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" start="15">
+<li><p>The new <em>Intersection</em> layer
+has fields from both the <em>Buildings</em> and <em>Grid</em> layers:</p></li>
+</ol>
+<img alt="../_images/hazustool12.png" src="../_images/hazustool12.png" />
+<ol class="arabic simple" start="16">
+<li><p>Each building polygon that intersects
+the grid has several partitions (polygons) with different elevations.
+The following building has 7 partitions with different data from each grid:</p></li>
+</ol>
+<img alt="../_images/hazustool13.jpeg" src="../_images/hazustool13.jpeg" />
+<ol class="arabic simple" start="17">
+<li><p>Each partition of the building has,
+different field values. For example, HOUSE_ID “1” in the Features Table,
+has different ‘elevation’, ‘water_elev’, and ‘flow_depth’:</p></li>
+</ol>
+<img alt="../_images/hazustool14.png" src="../_images/hazustool14.png" />
+</div>
+<div class="section" id="homogenize-the-intersection-layer">
+<h2>Homogenize the Intersection Layer<a class="headerlink" href="#homogenize-the-intersection-layer" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" start="18">
+<li><p>Select the HAZUS
+icon in the <em>FLO-2D Toolbar</em>.</p></li>
+</ol>
+<img alt="../_images/hazustool15.png" src="../_images/hazustool15.png" />
+<ol class="arabic simple" start="19">
+<li><p>Fill the dialog box as
+shown below and click the <em>Compute and Show Building Statistics</em> button.</p></li>
+</ol>
+<img alt="../_images/hazustool16.png" src="../_images/hazustool16.png" />
+<p><em>Note: The ‘Finished floor global adjustment factor’ value will be added
+to the ground elevations, if selected.</em></p>
+<ol class="arabic simple" start="20">
+<li><p>Click OK to close
+the message dialog box.</p></li>
+</ol>
+<img alt="../_images/hazustool17.png" src="../_images/hazustool17.png" />
+<ol class="arabic simple" start="21">
+<li><p>The Hazus tool calculates the
+statistics of the buildings polygons. It computes the following data for each building.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Ground elevation (min, max, mean);</p></li>
+<li><p>First floor elevation (min, max, mean);</p></li>
+<li><p>Water surface elevation (min, max, mean);</p></li>
+<li><p>Depth (min, max, mean).</p></li>
+</ul>
+<img alt="../_images/hazustool18.png" src="../_images/hazustool18.png" />
+<img alt="../_images/hazustool19.png" src="../_images/hazustool19.png" />
+</div>
+<div class="section" id="join-building-statistics-table-to-building-polygons">
+<h2>Join Building Statistics Table to Building Polygons<a class="headerlink" href="#join-building-statistics-table-to-building-polygons" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" start="22">
+<li><p>Right click the <em>Buildings</em>
+layer and click <em>Properties</em>. <em>Add a Join</em> to the layer. Click <em>OK</em> and Close the <em>Properties</em> window.</p></li>
+</ol>
+<img alt="../_images/hazustool20.png" src="../_images/hazustool20.png" />
+<img alt="../_images/hazustool21.png" src="../_images/hazustool21.png" />
+<ol class="arabic simple" start="23">
+<li><p>Save the <em>Buildings</em> Layer to a
+shapefile. Select the <em>Save As…</em> to a location and name the file.</p></li>
+</ol>
+<p><strong>Note:</strong> The style of this new layer can be edited to help the user review
+the data. The attributes can be sorted and arranged to help track
+outliers or bad data. Use the field calculator to perform additional
+statistical analysis on the data in this layer.</p>
+<img alt="../_images/hazustool22.png" src="../_images/hazustool22.png" />
+<img alt="../_images/hazustool23.png" src="../_images/hazustool23.png" />
+<ol class="arabic simple" start="24">
+<li><p>Now, the Buildings Shapefile
+has “join” fields from the Buildings Statistics table:</p></li>
+</ol>
+<img alt="../_images/hazustool24.png" src="../_images/hazustool24.png" />
+</div>
+<div class="section" id="rasterize-the-buildings">
+<h2>Rasterize the Buildings<a class="headerlink" href="#rasterize-the-buildings" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" start="25">
+<li><p>On the Main QGIS Menu,
+click <em>Processing</em>&gt;<em>Toolbox</em>.</p></li>
+</ol>
+<img alt="../_images/hazustool25.png" src="../_images/hazustool25.png" />
+<ol class="arabic simple" start="26">
+<li><p>Enter the search term <em>Rasterize</em>
+in the Processing Toolbox search field. Double click the <em>Saga Rasterize</em> tool. Saga&gt;Raster Creation Tools&gt;Rasterize.</p></li>
+</ol>
+<img alt="../_images/hazustool26.png" src="../_images/hazustool26.png" />
+<ol class="arabic simple" start="27">
+<li><p>Change the dialog
+box as shown below and click <em>Run</em>.</p></li>
+</ol>
+<img alt="../_images/hazustool27.png" src="../_images/hazustool27.png" />
+<ol class="arabic simple" start="28">
+<li><p>This example uses 10 ft. pixel resolution.
+The user can change this value to the desired resolution to better fit the buildings.
+This raster can be used with the FEMA Hazus software. Any other rasters that Hazus
+requires can be generated with the same meth-odology.</p></li>
+</ol>
+<img alt="../_images/hazustool28.png" src="../_images/hazustool28.png" />
+</div>
+</div>
+
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="Grid Info Tool.html" title="previous page">Grid Info Tool</a>
+    <a class='right-next' id="next-link" href="Import Data Files.html" title="next page">Import Data Files</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Karen O'Brien<br/>
+        
+            &copy; Copyright 2021, Karen O&#39;Brien.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
