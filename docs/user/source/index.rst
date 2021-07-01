@@ -26,11 +26,6 @@ Table of Contents
    /plugin-features/Data Storage
    /plugin-features/Plugin Features
    /plugin-features/View Options
-.. toctree::
-   :maxdepth: 1
-   :caption: Post Development Grid Modification:
-
-   /post-development-grid-modification/Post Development Grid Modification
 
 .. toctree::
    :maxdepth: 1
@@ -89,16 +84,9 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
-   :caption: Workshops:
+   :caption: Post Development Grid Modification:
 
-   /Workshops/workshop
-   /Workshops/Lesson 1
-   /Workshops/Lesson 2
-   /Workshops/Lesson 3
-   /Workshops/Lesson 4
-   /Workshops/Lesson 5
-   /Workshops/Lesson 6
-   /Advance-Workshop/Advanced
+   /post-development-grid-modification/Post Development Grid Modification
 
 
 
