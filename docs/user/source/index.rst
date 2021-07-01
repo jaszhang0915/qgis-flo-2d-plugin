@@ -31,12 +31,12 @@ Table of Contents
    :maxdepth: 1
    :caption: Toolbar QGIS and FLO-2D:
 
+   /toolbar/Flo-2D Settings
    /toolbar/Channel Profile
    /toolbar/Convert User Layers to Schematic Layers
    /toolbar/Debug
    /toolbar/Export Project
    /toolbar/Flo-2D Info Tool
-   /toolbar/Flo-2D Settings
    /toolbar/Grid Info Tool
    /toolbar/Hazus Tool
    /toolbar/Import Data Files
