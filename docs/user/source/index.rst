@@ -26,11 +26,6 @@ Table of Contents
    /plugin-features/Data Storage
    /plugin-features/Plugin Features
    /plugin-features/View Options
-.. toctree::
-   :maxdepth: 1
-   :caption: Post Development Grid Modification:
-
-   /post-development-grid-modification/Post Development Grid Modification
 
 .. toctree::
    :maxdepth: 1
@@ -52,7 +47,20 @@ Table of Contents
    /toolbar/QGIS General Tools
    /toolbar/Run Flo-2D
    /toolbar/Schema 2 User
+<<<<<<< Updated upstream
    /toolbar/Setup Control Variables
+=======
+   /toolbar/Control Variables
+   /toolbar/Export Project
+   /toolbar/Import RAS Channel
+   /toolbar/Setup Control Variables
+   /toolbar/Schema 2 User
+   /toolbar/Convert User Layers to Schematic Layers
+   /toolbar/Channel Profile
+   /toolbar/Flo-2D Info Tool
+   /toolbar/Grid Info Tool
+   /toolbar/Levee Tool
+>>>>>>> Stashed changes
    /toolbar/Walls
 
 .. toctree::
@@ -89,6 +97,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+<<<<<<< Updated upstream
    :caption: Workshops:
 
    /Workshops/workshop
@@ -113,3 +122,8 @@ Table of Contents
 
 
 
+=======
+   :caption: Post Development Grid Modification:
+
+   /post-development-grid-modification/Post Development Grid Modification
+>>>>>>> Stashed changes
